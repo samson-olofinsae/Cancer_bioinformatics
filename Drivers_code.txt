@@ -22,29 +22,10 @@
        
     17	#set path for your working directory : dndscv_work
        
-    18	cd /mnt/bmh01-rds/UoOxford_David_W/shared/Samson_project/Mutant_Wild_data/ssDPC_from_VCFs/dndscv_work
-       
-    19	mkdir indel_folder snv_folder
-       
-    20	#copies indel VCF files to indel_folder
-       
-    21	cd /mnt/bmh01-rds/UoOxford_David_W/shared/PPCG_Data_Release/Somatic_variants/InDels/PPCG_indels_06_Oct_2020/indels/Tier_3
-    22	cp * /mnt/bmh01-rds/UoOxford_David_W/shared/Samson_project/Mutant_Wild_data/ssDPC_from_VCFs/dndscv_work/indel_folder
-       
-    23	#copies SNVs VCF files to snv_folder
-    24	cd /mnt/bmh01-rds/UoOxford_David_W/shared/PPCG_Data_Release/Somatic_variants/SNVs/Filtered_SNV_VCFs_20_April_2021
-    25	cp * /mnt/bmh01-rds/UoOxford_David_W/shared/Samson_project/Mutant_Wild_data/ssDPC_from_VCFs/dndscv_work/snv_folder
-       
-    26	cd /mnt/bmh01-rds/UoOxford_David_W/shared/Samson_project/Mutant_Wild_data/ssDPC_from_VCFs/dndscv_work
-       
-       
-       
-    27	# create folders for dNdScv input and output files
-       
-    28	mkdir Input_dNdScv Output_dNdScv
+    18	
        
     29	# step2 : Generate mutation table from indel file - sample (n)_indel.vcf.gz files from VCF files  (n = numerical samples number)
-    30	cd /mnt/bmh01-rds/UoOxford_David_W/shared/Samson_project/Mutant_Wild_data/ssDPC_from_VCFs/utility_codes/indel_folder/
+    30	cd /path/to/some/folder/
        
     31	COUNTER=0
     32	for file in *_Tier_3.vcf.gz
